@@ -10,26 +10,85 @@
     <link rel="shortcut icon" href="./logo judo-modified.png">
     <style>
         body {
-            background-color: rgba(214,5,34,255);
             text-align: center;
             padding-top: 20px;
             font-family: sans-serif;
+            background-color: rgb(40, 69, 195);
+
 
         }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            bottom: 3px;
+            color: white;
+            left: 2px;
+            right: 2px;
+            line-height: 25px;
+            border-radius: 50px;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            padding: 5px 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            color: white;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 20px, 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
         }
 
-        
+        footer button a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        main section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 150px;
+        }
+
+
     </style>
 </head>
 
 <body>
     <nav>
         <!-- ul = unordered list -->
+        <img src="./logo judo-modified.png" alt="logo judo" height="50">
         <ul>
-            <li>Accueil</li>
+            <li>
+                <a href="#header">acceuil</a>
+            </li>
             <li>
                 <a href="#tab">tableau</a>
             </li>
@@ -41,7 +100,8 @@
             </li>
         </ul>
     </nav>
-    <header>
+    <header id="header">
+        <br>
         <!-- un seul h1 par page -->
         <h1>Titre</h1>
         <p>
@@ -51,7 +111,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="list">
             <h2>order list</h2>
             <ol>
                 <li>Premier élément</li>
@@ -139,7 +199,7 @@
                 <input type="submit" value="Envoyer">
             </form>
         </section>
-
+        <br><br><br><br>
     </main>
 
 
@@ -147,10 +207,10 @@
         <a href="mailto:995matb@gmail.com" target="_blank">mon mail</a>
         <br>
         <a href="./test.txt">txt</a>
-        <br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br>
-        en savoir plus sur la Deuxième page du site 
-        <a href="./deuxieme.html">ici</a>
+        <br>
+        <button>
+            <a href="./deuxieme.html">Page 2</a>
+        </button>
     </footer>
 </body>
 
