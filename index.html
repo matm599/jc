@@ -1,115 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- titre de la page -->
     <title>onglet</title>
-    <!-- icone favicon -->
     <link rel="shortcut icon" href="./logo judo-modified.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <style>
-        body {
-            text-align: center;
-            padding-top: 20px;
-            font-family: sans-serif;
-            background-color: rgb(40, 69, 195);
-        }
-
-        footer {
-            background-color: rgb(0, 0, 0);
-            position: fixed;
-            bottom: 3px;
-            color: white;
-            left: 2px;
-            right: 2px;
-            line-height: 25px;
-            border-radius: 50px;
-            padding: 10px;
-        }
-
-        nav {
-            display: flex;
-            background-color: rgb(0, 0, 0);
-            padding: 5px 25px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            color: white;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            margin: 20px, 0;
-            padding: 0;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        footer button a {
-            text-decoration: none;
-            color: black;
-
-        }
-
-        main section {
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid black;
-            border-radius: 150px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <nav>
-        <!-- ul = unordered list -->
         <img src="./logo judo-modified.png" alt="logo judo" height="50">
         <ul>
-            <li>
-                <a href="#header">acceuil</a>
-            </li>
-            <li>
-                <a href="#tab">tableau</a>
-            </li>
-            <li>
-                <a href="#img">image</a>
-            </li>
-            <li>
-                <a href="#form">formulaire</a>
-            </li>
+            <li><a href="#header">Accueil</a></li>
+            <li><a href="#tab">Tableau</a></li>
+            <li><a href="#img">Image</a></li>
+            <li><a href="#form">Formulaire</a></li>
         </ul>
     </nav>
     <header id="header">
-        <br>
-        <!-- un seul h1 par page -->
+        <br><br><br>
         <h1>Titre</h1>
         <p>
             texte <em>en italique</em> et <strong>en gras</strong>
-
         </p>
     </header>
-
     <main>
         <section id="list">
-            <h2>order list</h2>
+            <h2>Liste ordonnée</h2>
             <ol>
                 <li>Premier élément</li>
                 <li>Deuxième élément</li>
@@ -117,98 +35,88 @@
             </ol>
         </section>
         <section id="img">
-            <h3>image en html</h3>
+            <h3>Image en HTML</h3>
             <img src="./2.png" height="200" alt="pub">
-            <!-- alt est une description de l'image -->
         </section>
         <section id="tab">
             <div>
-                <h4>tableau</h4>
-                <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
+                <h4>Tableau</h4>
+                <table class="centered-table" border="4" cellpadding="10" cellspacing="4">
                     <thead>
                         <tr>
-                            <th>colonne 1</th>
-                            <th>colonne 2</th>
-                            <th>colonne 3</th>
+                            <th>Colonne 1</th>
+                            <th>Colonne 2</th>
+                            <th>Colonne 3</th>
                         </tr>
-
                     </thead>
                     <tbody>
                         <tr>
-                            <td rowspan="2">ligne 1, colonne 1</td>
-                            <td>ligne 1, colonne 2</td>
-                            <td>ligne 1, colonne 3</td>
+                            <td rowspan="2">Ligne 1, colonne 1</td>
+                            <td>Ligne 1, colonne 2</td>
+                            <td>Ligne 1, colonne 3</td>
                         </tr>
                         <tr>
-                            <td>ligne 2, colonne 2</td>
-                            <td>ligne 2, colonne 3</td>
+                            <td>Ligne 2, colonne 2</td>
+                            <td>Ligne 2, colonne 3</td>
                         </tr>
                         <tr>
-                            <td>ligne 3, colonne 1</td>
-                            <td colspan="2">ligne 3, colonne 2</td>
+                            <td>Ligne 3, colonne 1</td>
+                            <td colspan="2">Ligne 3, colonne 2</td>
                         </tr>
+                    </tbody>
                 </table>
             </div>
             <div>
-                <h2><span>&#128512;</span></h2>
-                <h5><i>&#128512;</i>liens</h5>
-                <!-- _blank ouvre le lien dans un nouvel onglet -->
-                <a href="https://htmlcheatsheet.com" target="_blank">html cheat</a>
+                <h2><span title="Smiling Face">&#128512;</span></h2>
+                <h5><i title="Smiling Face">&#128512;</i> Liens</h5>
+                <a href="https://htmlcheatsheet.com" target="_blank" rel="noopener">HTML Cheat</a>
             </div>
+        </section>
+        <section id="video">
             <div>
-                <h3>vidéo</h3>
+                <h3>Vidéo</h3>
                 <video src="./6254569-uhd_2160_3840_30fps.mp4" autoplay muted loop height="300"></video>
             </div>
         </section>
         <section id="form">
-            <h2>formulaires</h2>
-            <form action="">
-                <label for="name">Nom : </label>
-                <input type="text" id="name" placeholder="Entrez votre nom">
-                <br />
-                <label for="age">Âge : </label>
-                <input type="number" id="age" placeholder="Entrez votre âge" value="18">
-                <br />
-                <label for="gender">Genre : </label>
-                <select id="gender">
+            <h2>Formulaires</h2>
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom">
+                <br>
+                <label for="age">Âge :</label>
+                <input type="number" id="age" name="age" placeholder="Entrez votre âge" value="18">
+                <br>
+                <label for="gender">Genre :</label>
+                <select id="gender" name="gender">
                     <option value="homme">Homme</option>
                     <option value="femme">Femme</option>
                     <option value="autre">Autre</option>
                 </select>
-
-                <!-- input de type radio -->
                 <div>
-                    <input type="radio" id="celibataire" name="situation">
-                    <label for="celibataire">celibataire</label>
-                    <input type="radio" id="marie" name="situation" checked>
-                    <label for="marie">marié</label>
-                    <input type="radio" id="divorce" name="situation">
-                    <label for="divorce">divorcé</label>
+                    <input type="radio" id="celibataire" name="situation" value="celibataire">
+                    <label for="celibataire">Célibataire</label>
+                    <input type="radio" id="marie" name="situation" value="marie" checked>
+                    <label for="marie">Marié</label>
+                    <input type="radio" id="divorce" name="situation" value="divorce">
+                    <label for="divorce">Divorcé</label>
                 </div>
-                <textarea placeholder="texte..." cols="30" rows="10"></textarea>
-                <br />
-                <label for="newsletter">S'inscrire à la newsletter</label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <br />
+                <textarea placeholder="Texte..." cols="30" rows="10"></textarea>
+                <br>
                 <input type="checkbox" id="newsletter" name="newsletter">
                 <label for="newsletter">S'inscrire à la newsletter</label>
-                <br />
+                <br>
                 <input type="submit" value="Envoyer">
             </form>
         </section>
-        <br><br><br><br>
     </main>
-
-
     <footer>
-        <a href="mailto:995matb@gmail.com" target="_blank">mon mail</a>
+        <a href="mailto:995matb@gmail.com" target="_blank">Mon mail</a>
         <br>
         <a href="./test.txt">txt</a>
         <br>
-        <button>
-            <a href="./deuxieme.html">Page 2</a>
-        </button>
+        <a href="./deuxieme.html"><button>Page 2</button></a>
     </footer>
+    <br><br><br><br>
 </body>
-
 </html>

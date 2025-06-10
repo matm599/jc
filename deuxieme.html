@@ -1,73 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- titre de la page -->
-    <!-- icone favicon -->
+    <title>en CSS</title>
     <link rel="shortcut icon" href="./logo judo-modified.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <title>en CSS</title>
-    <style>
-        body {
-            background-color: rgb(244, 227, 222);
-            text-align: center;
-            padding-top: 50px;
-            font-family: sans-serif;
-        }
-
-        h2 {
-            color: red;
-        }
-
-        h3 {
-            color: rgba(255, 111, 0, 0.425);
-        }
-
-        p {
-            color: rgb(0, 94, 128);
-            line-height: 1.5;
-            margin: 20px auto 0;
-            max-width: 700px;
-        }
-
-        img#prin {
-            width: 700px;
-            border: solid 5px black;
-        }
-
-        #google {
-            background-color: blueviolet;
-            color: white;
-            padding: 10px 12px;
-            border-radius: 20px;
-            text-decoration: none;
-            border: none;
-            display: inline-block;
-            text-transform: capitalize;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 5px 0;
-        }
-        a.autre {
-            color: rgb(62, 103, 239);
-        }
-    </style>
+    <link rel="stylesheet" href="./deuxieme.css">
 </head>
-
-
-
-
 <body>
     <img id="prin" src="./458394903_1662800597846447_7701153971891668783_n.jpg" alt="moi">
     <h1 style="color: blue;">Coucou</h1>
-
-    <a id="google" href="https://www.google.fr/" target="_blank">google</a>
+    <a id="google" href="https://www.google.fr/" target="_blank" rel="noopener">google</a>
 
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores non minus voluptates modi cumque sunt, illo
         animi labore quaerat magni ea doloremque tempora nulla omnis numquam dolorum soluta. Ea, beatae. Lorem ipsum,
@@ -81,27 +25,39 @@
         quis libero.
         Asperiores inventore accusantium quo in quae molestiae illo temporibus eligendi sit tenetur? Minus sed illo sunt
         necessitatibus distinctio, culpa quae corrupti vel tenetur harum possimus! Eveniet illum officia praesentium
-        quos. <br><br>
+        quos.<br><br>
         Voluptatem dolorum ad quo, soluta deleniti, quod aliquid minus fuga adipisci necessitatibus temporibus sed sunt
-        facere magni cupiditate dolor earum facilis exercitationem ipsa excepturi. Nulla dolores ad sit facilis eum.</p>
-    <br><br><br>
+        facere magni cupiditate dolor earum facilis exercitationem ipsa excepturi. Nulla dolores ad sit facilis eum.
+    </p>
+
     <p>Et encore un paragraphe pour voir si le style s'applique bien.</p>
 
-    <br><br>
-
-    <ul>
-        <li><a class="autre" href="https://www.facebook.com/judo.bellengreville.1"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="autre" href="https://jc-de-bellengreville.ffjudo.com"><img src="./logo judo-modified.png" alt="logo jc" height="20px"></a></li>
-        <li><a class="autre" href="https://www.instagram.com/judobellengreville14/"><i class="fa fa-instagram"></i></a></li>
-        <li><a class="autre" href="https://maps.app.goo.gl/L6HKVBGbjJzDAZeTA"><i class="fa fa-map-marker"></i></a></li>
-    </ul>
-    <h2>h2</h2>
-    <h2>deuxieme h2</h2>
-    <h3>et en h3</h3>
-
-
-
-
+    <footer>
+        <ul>
+            <li>
+                <a class="facebook" href="https://www.facebook.com/judo.bellengreville.1" aria-label="Facebook">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li>
+                <a class="site" href="https://jc-de-bellengreville.ffjudo.com" aria-label="Site Judo Club">
+                    <img src="./logo judo-modified.png" alt="logo jc" height="20">
+                </a>
+            </li>
+            <li>
+                <a class="instagram" href="https://www.instagram.com/judobellengreville14/" aria-label="Instagram" >
+                    <img src="./instagram.png" alt="logo instagram" height="20">
+                </a>
+            </li>
+            <li>
+                <a class="maps" href="https://maps.app.goo.gl/L6HKVBGbjJzDAZeTA" aria-label="Adresse">
+                    <i class="fa fa-map-marker"></i>
+                </a>
+            </li>
+        </ul>
+        <button>
+            <a href="index.html" class="button-link">Retour à l'accueil</a>
+        </button>
+    </footer>
 </body>
-
 </html>

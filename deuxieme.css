@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* html & body */
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(118, 111, 108);
+    text-align: center;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+
+/* headings */
+h2 {
+    color: red;
+}
+
+h3 {
+    color: rgba(255, 111, 0, 0.425);
+}
+
+/* paragraphs */
+p {
+    color: rgb(0, 94, 128);
+    line-height: 1.5;
+    margin: 20px auto 0;
+    max-width: 700px;
+}
+
+/* image */
+img#prin {
+    width: 60%;
+    border: solid 5px black;
+    border-radius: 50%;
+}
+img#prin:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.5);
+    transition: transform 0.6s ease-in-out , box-shadow 0.6s ease-in-out;
+}
+
+/* list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* google button/link */
+#google {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+#google:hover {
+    background-color: rgb(221, 30, 30);
+    color: white;
+    transform: scale(1.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* facebook button/link */
+.facebook {
+    display: inline-block;
+    color: rgba(8,102,255,255);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 0 10px;
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.facebook:hover {
+    color: white;
+    background-color: rgba(8,102,255,255);
+    transform: scale(1.1);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.site:hover {
+    transform: scale(1.1);
+    background-color: rgba(214,5,34,255);
+    transition: transform 0.3s ease-in-out;
+}
+
+.instagram:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* footer */
+footer {
+    padding: 1px;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px;
+}
+
+footer a {
+    display: flex;
+    justify-content:center;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 6px;
+    margin: 0 10px;
+    background: rgba(255,255,255,0.2);
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+footer button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    padding: 6px;
+    margin: 0 10px;
+    transition: border-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+footer button:hover {
+    color: rgb(221, 30, 30);
+    border-color: rgba(221, 30, 30, 0);
+    transform: scale(1.1);
+}
