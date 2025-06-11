@@ -3,7 +3,6 @@
 html {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
-
 }
 
 body {
@@ -15,7 +14,8 @@ body {
 
 nav {
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--footer-bg-color);
+    transition: background-color 0.3s;
     padding: 5px 25px;
     position: fixed;
     top: 0;
@@ -40,13 +40,16 @@ nav ul li a {
     text-decoration: none;
     padding: 10px;
     cursor: pointer;
+    background-color: #000;
+    border-radius: 25%;
+    margin: 5px;
 }
 
 nav ul li a:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    background-color: #fff;
+    color: #000;
     border-radius: 25%;
-    font-size: 0.6em;
+    font-size: 1.2em;
     transform: scale(1.1, 1);
     transition: 0.5s ease-in-out;
 }
@@ -63,17 +66,7 @@ main section {
     border-radius: 150px;
 }
 
-#list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: antiquewhite;
-}
-
-#img {
-    background-color: rgb(192, 40, 40);
-}
-
+#list,
 #tab {
     display: flex;
     flex-direction: column;
@@ -81,34 +74,123 @@ main section {
     background-color: antiquewhite;
 }
 
-#video {
+#img,
+#video,
+#form {
+    background-color: rgb(192, 40, 40);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(192, 40, 40);
 }
 
-#form {
+#form input,
+#form textarea {
+    padding: 10px;
+    margin: 5px 0px 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+#situation {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+#form input[type="submit"],
+#form button[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+
+}
+
+#form input[type="submit"]:hover,
+#form button[type="submit"]:hover {
+    background-color: darkviolet;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: #111;
     position: fixed;
-    bottom: 0.75px;
-    color: white;
-    left: 0px;
-    right: 0px;
-    line-height: 25px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    padding: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 18px 32px 14px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.15);
 }
 
-footer button a {
+footer .mail,
+footer .txt,
+footer .actions {
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer .txt {
+    flex: 2 1 0;
+    text-align: center;
+    opacity: 0.85;
+}
+
+footer .mail {
+    flex: 1 1 0;
+    text-align: left;
+    padding-left: 10px;
+}
+
+footer .actions {
+    flex: 1 1 0;
+    text-align: right;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+footer button,
+footer a.button {
+    background-color: #f5ecd7;
+    color: #222;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+    transition: background 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s;
     text-decoration: none;
-    color: black;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+}
+
+footer button:hover,
+footer a.button:hover {
+    background-color: #e03a3a;
+    color: #fff;
+    transform: translateY(-2px) scale(1.08);
+    border-radius: 24px;
 }

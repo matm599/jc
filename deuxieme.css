@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* html & body */
 html {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
@@ -13,7 +12,22 @@ body {
     font-family: sans-serif;
 }
 
-/* headings */
+nav {
+    display: flex;
+    background-color: var(--footer-bg-color);
+    transition: background-color 0.3s;
+    padding: 5px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h2 {
     color: red;
 }
@@ -22,7 +36,6 @@ h3 {
     color: rgba(255, 111, 0, 0.425);
 }
 
-/* paragraphs */
 p {
     color: rgb(0, 94, 128);
     line-height: 1.5;
@@ -30,7 +43,6 @@ p {
     max-width: 700px;
 }
 
-/* image */
 img#prin {
     width: 60%;
     border: solid 5px black;
@@ -42,7 +54,6 @@ img#prin:hover {
     transition: transform 0.6s ease-in-out , box-shadow 0.6s ease-in-out;
 }
 
-/* list */
 ul {
     list-style-type: none;
     padding: 0;
@@ -52,7 +63,6 @@ li {
     margin: 5px 0;
 }
 
-/* google button/link */
 #google {
     background-color: blueviolet;
     color: white;
@@ -71,10 +81,11 @@ li {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-/* facebook button/link */
 .facebook {
     display: inline-block;
     color: rgba(8,102,255,255);
+    background-color: rgba(8,102,255,255);
+    height: 40px;
     text-decoration: none;
     border-radius: 8px;
     padding: 6px;
@@ -83,10 +94,13 @@ li {
 }
 
 .facebook:hover {
-    color: white;
-    background-color: rgba(8,102,255,255);
     transform: scale(1.1);
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: transform 0.3s ease-in-out;
+    background-image: url(/assets/img/Facebook2.png) ;
+    background-size:cover
+}
+.facebook:hover img {
+    visibility: hidden;
 }
 
 .site:hover {
@@ -95,12 +109,36 @@ li {
     transition: transform 0.3s ease-in-out;
 }
 
+.instagram {
+    background-clip: content-box;
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+
+}
+
+
 .instagram:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
+    background-image: url(/assets/img/Instagram3.png) ;
+    background-size:contain;
 }
 
-/* footer */
+.instagram:hover img {
+    visibility: hidden;
+}
+
+.maps:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    background-image: url(/assets/img/maps2.png) ;
+    background-size:cover;
+}
+.maps:hover img {
+    visibility: hidden;
+}
+
+
 footer {
     padding: 1px;
     color: white;
@@ -129,16 +167,17 @@ footer a {
 
 footer button {
     background-color: transparent;
-    color: white;
     border: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 8px;
-    padding: 6px;
-    margin: 0 10px;
     transition: border-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-footer button:hover {
-    color: rgb(221, 30, 30);
-    border-color: rgba(221, 30, 30, 0);
+footer button:hover a {
+    color:black;
+    background-color: white;
     transform: scale(1.1);
+}
+
+#home-button {
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
