@@ -48,10 +48,11 @@ img#prin {
     border: solid 5px black;
     border-radius: 50%;
 }
+
 img#prin:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.5);
-    transition: transform 0.6s ease-in-out , box-shadow 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
 }
 
 ul {
@@ -83,8 +84,8 @@ li {
 
 .facebook {
     display: inline-block;
-    color: rgba(8,102,255,255);
-    background-color: rgba(8,102,255,255);
+    color: rgba(8, 102, 255, 255);
+    background-color: rgba(8, 102, 255, 255);
     height: 40px;
     text-decoration: none;
     border-radius: 25px;
@@ -96,9 +97,10 @@ li {
 .facebook:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    background-image: url(/assets/img/Facebook2.png) ;
-    background-size:cover
+    background-image: url(/assets/img/Facebook2.png);
+    background-size: cover
 }
+
 .facebook:hover img {
     visibility: hidden;
 }
@@ -109,13 +111,13 @@ li {
 
 .site:hover {
     transform: scale(1.1);
-    background-color: rgba(214,5,34,255);
+    background-color: rgba(214, 5, 34, 255);
     transition: transform 0.3s ease-in-out;
 }
 
 .instagram {
     background-clip: content-box;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     padding: 12px;
     border-radius: 25px;
 
@@ -125,8 +127,8 @@ li {
 .instagram:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    background-image: url(/assets/img/Instagram3.png) ;
-    background-size:contain;
+    background-image: url(/assets/img/Instagram3.png);
+    background-size: contain;
 }
 
 .instagram:hover img {
@@ -141,11 +143,12 @@ li {
 .maps:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-    background-image: url(/assets/img/maps1.png) ;
+    background-image: url(/assets/img/maps1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .maps:hover img {
     visibility: hidden;
 }
@@ -167,13 +170,13 @@ footer ul {
 
 footer a {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     padding: 6px;
     margin: 0 10px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     transition: border-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -184,7 +187,7 @@ footer button {
 }
 
 footer button:hover a {
-    color:black;
+    color: black;
     background-color: white;
     transform: scale(1.1);
 }
